@@ -7,13 +7,12 @@
 body {
   font-family: "HTOWERT", sans-serif;
   font-size: 14px;
+  line-height: 1.5;
   letter-spacing: 1;
   text-transform: uppercase;
   color: #303030;
-  background-image: url(./img/background.png); background-repeat: no-repeat;
-  background-position: center;
+  background: #ffffff url(./img/background.png) no-repeat center;
   background-size: cover;
-
 }
 
 /* Utilities */
@@ -54,7 +53,7 @@ ul {
   margin-top: 0;
 }
 header {
-  background: #FFFFFF;
+  background: #ffffff;
   opacity: 0.8;
   position: absolute;
   left: 0;
@@ -70,23 +69,20 @@ header {
 }
 .authorization {
   float: right;
-  padding-top: 18px;
+  padding-top: 16px;
   padding-bottom: 14px;
 }
 
 .list-item {
   float: left;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
 }
 .list-item:not(:last-child) {
   margin-right: 24px;
 }
 /* Slider */
 .slider-wrap {
-  background-color: #303030;
-  background-image: url(/img/slider.png);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #303030 url(./img/slider.png) no-repeat center;
   background-size: cover;
   padding: 257px 0;
   margin-bottom: 500px;
