@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "HTOWERT";
+  src: url("/font/HTOWERT.TTF");
+  font-style: normal;
+  font-weight: 400;
+}
+body {
+  font-family: "HTOWERT", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1;
+  text-transform: uppercase;
+  color: #303030;
+  background-image: url(./img/background.png); background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+/* Utilities */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  display: inline-block;
+  color: #303030;
+}
+.container {
+  max-width: 990px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+/* Header */
+.logo {
+  padding-top: 10px;
+}
+.header {
+  position: relative;
+  margin-top: 0;
+}
+header {
+  background: #FFFFFF;
+  opacity: 0.8;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.navigation {
+  float: right;
+  position: absolute;
+  right: 14px;
+  bottom: -2px;
+}
+.authorization {
+  float: right;
+  padding-top: 18px;
+  padding-bottom: 14px;
+}
+
+.list-item {
+  float: left;
+  padding-bottom: 15px;
+}
+.list-item:not(:last-child) {
+  margin-right: 24px;
+}
+/* Slider */
+.slider-wrap {
+  background-color: #303030;
+  background-image: url(/img/slider.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 257px 0;
+  margin-bottom: 500px;
+}
+
+/* Footer */
+.footer {
+  background-color: #2d2d2d;
+  padding-top: 31px;
+  padding-bottom: 79px;
+}
