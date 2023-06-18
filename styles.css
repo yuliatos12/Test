@@ -8,15 +8,12 @@ body {
   font-family: "HTOWERT", sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  letter-spacing: 1;
   text-transform: uppercase;
   color: #303030;
   background: #ffffff url(./img/background.png) no-repeat center;
   background-size: cover;
 }
-
 /* Utilities */
-
 p,
 h1,
 h2,
@@ -26,68 +23,67 @@ h5,
 h6 {
   margin: 0;
 }
-
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 .link {
   text-decoration: none;
   display: inline-block;
   color: #303030;
 }
 .container {
-  max-width: 990px;
-  padding-right: 15px;
-  padding-left: 15px;
+  width: 990px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 /* Header */
-.logo {
-  padding-top: 10px;
-}
 .header {
   position: relative;
-  margin-top: 0;
 }
 header {
   background: #ffffff;
   opacity: 0.8;
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
 }
-
-.navigation {
+.header-cont {
   float: right;
-  position: absolute;
-  right: 14px;
-  bottom: -2px;
+}
+.navigation {
+  clear: both;
 }
 .authorization {
   float: right;
   padding-top: 16px;
-  padding-bottom: 14px;
+  margin-bottom: 14px;
 }
-
+.authorization .link,
+.menu-list .link {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .list-item {
   float: left;
-  padding-bottom: 16px;
 }
 .list-item:not(:last-child) {
   margin-right: 24px;
+}
+.menu-list .link {
+  padding-bottom: 8px;
+}
+.authorization .link:is(:hover, :focus),
+.menu-list .link:is(:hover, :focus) {
+  text-shadow: 1px 1px 2px #303030;
 }
 /* Slider */
 .slider-wrap {
   background: #303030 url(./img/slider.png) no-repeat center;
   background-size: cover;
+  width: 100%;
   padding: 257px 0;
   margin-bottom: 500px;
 }
-
 /* Footer */
 .footer {
   background-color: #2d2d2d;
