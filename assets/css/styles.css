@@ -1,17 +1,19 @@
 @font-face {
-  font-family: "HTOWERT";
-  src: url("/font/HTOWERT.TTF");
+  font-family: "High Tower";
+  src: url("/assets/font/HTOWERT.TTF");
   font-style: normal;
   font-weight: 400;
 }
 body {
-  font-family: "HTOWERT", sans-serif;
+  font-family: "High Tower", sans-serif;
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
   color: #303030;
-  background: #ffffff url(./img/background.png) no-repeat center;
-  background-size: cover;
+  background-image: url(/assets/img/emblem.png), url(/assets/img/emblem.png), url(/assets/img/background.png);
+  background-size: 1024px, 1024px, cover; 
+  background-position: top 0 left -466px, bottom 0px right -466px, center;
+  background-repeat: no-repeat;
 }
 /* Utilities */
 p,
@@ -30,34 +32,41 @@ ul {
 }
 .link {
   text-decoration: none;
-  display: inline-block;
   color: #303030;
 }
 .container {
-  width: 990px;
-  padding: 0 15px;
+  width: 960px;
   margin: 0 auto;
+  display: table;
 }
 /* Header */
 .header {
   position: relative;
 }
 header {
-  background: #ffffff;
-  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.8);
   position: absolute;
   width: 100%;
+}
+.logo {
+  float: left;
+  /* margin-bottom: 4px; */
 }
 .header-cont {
   float: right;
 }
 .navigation {
-  clear: both;
+  float: right;
+  clear: right;
+  margin-top: 14px;
 }
 .authorization {
   float: right;
+  margin-top: 16px;
+}
+.authorization .link {
   padding-top: 16px;
-  margin-bottom: 14px;
+  padding-bottom: 14px;
 }
 .authorization .link,
 .menu-list .link {
@@ -71,18 +80,17 @@ header {
 }
 .menu-list .link {
   padding-bottom: 8px;
+  padding-top: 14px;
 }
 .authorization .link:is(:hover, :focus),
 .menu-list .link:is(:hover, :focus) {
   text-shadow: 1px 1px 2px #303030;
 }
 /* Slider */
-.slider-wrap {
-  background: #303030 url(./img/slider.png) no-repeat center;
-  background-size: cover;
-  width: 100%;
-  padding: 257px 0;
-  margin-bottom: 500px;
+.slider-img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1400px;
 }
 /* Footer */
 .footer {
