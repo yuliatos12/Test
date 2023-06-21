@@ -100,7 +100,7 @@ header {
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 11px 11px 20px rgba(0, 0, 0, 0.45);
   /* temporary */
-  margin-bottom: 100px;
+  margin-bottom: 1000px;
 }
 .info {
   padding: 36px 36px 20px 36px;
@@ -124,7 +124,7 @@ header {
   background-color: #E9E8E8;
   padding: 2px 15px 20px 15px;
   width: 230px;
-  height: 160px;
+
 }
 .form-title {
   margin-bottom: 2px;
