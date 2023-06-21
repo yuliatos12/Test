@@ -1,6 +1,7 @@
+
 @font-face {
   font-family: "High Tower";
-  src: url("/assets/font/HTOWERT.TTF");
+  src: url("../font/HTOWERT.TTF");
   font-style: normal;
   font-weight: 400;
 }
@@ -8,9 +9,8 @@ body {
   font-family: "High Tower", sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  text-transform: uppercase;
   color: #303030;
-  background-image: url(/assets/img/emblem.png), url(/assets/img/emblem.png), url(/assets/img/background.png);
+  background-image: url("../img/emblem.png"), url("../img/emblem.png"), url("../img/background.png");
   background-size: 1024px, 1024px, cover; 
   background-position: top 0 left -466px, bottom 0px right -466px, center;
   background-repeat: no-repeat;
@@ -48,9 +48,10 @@ header {
   position: absolute;
   width: 100%;
 }
-.logo {
+.logo-img {
   float: left;
-  /* margin-bottom: 4px; */
+  margin-top: 1px;
+  margin-bottom: 4px;
 }
 .header-cont {
   float: right;
@@ -67,6 +68,7 @@ header {
 .authorization .link {
   padding-top: 16px;
   padding-bottom: 14px;
+  text-transform: uppercase;
 }
 .authorization .link,
 .menu-list .link {
@@ -81,6 +83,7 @@ header {
 .menu-list .link {
   padding-bottom: 8px;
   padding-top: 14px;
+  text-transform: uppercase;
 }
 .authorization .link:is(:hover, :focus),
 .menu-list .link:is(:hover, :focus) {
@@ -90,11 +93,61 @@ header {
 .slider-img {
   display: block;
   margin: 0 auto;
-  margin-bottom: 1400px;
+  margin-bottom: 50px;
 }
+/* Info */
+.pad {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 11px 11px 20px rgba(0, 0, 0, 0.45);
+  /* temporary */
+  margin-bottom: 100px;
+}
+.info {
+  padding: 36px 36px 20px 36px;
+}
+.info-container {
+  float: left;
+}
+.info-container:not(:first-child) {
+  margin-left: 85px;
+}
+.info-desc {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.16;
+  margin-top: 12px;
+}
+/* Form */
+.form {
+  background-color: #E9E8E8;
+  padding: 2px 15px 20px 15px;
+  width: 230px;
+  height: 160px;
+}
+.form-title {
+  margin-bottom: 2px;
+  text-align: center;
+}
+.form-lable:not(:first-child) {
+margin-top: 4px;
+}
+
+.form-input {
+  display: block;
+  height: 30px;
+  width: 210px;
+  box-shadow: inset 1px 1.7px 5px rgba(0, 1, 1, 0.23);
+  border: none;
+}
+
+
+
 /* Footer */
 .footer {
   background-color: #2d2d2d;
   padding-top: 31px;
   padding-bottom: 79px;
 }
+
