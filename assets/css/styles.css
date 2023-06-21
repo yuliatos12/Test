@@ -137,7 +137,7 @@ margin-top: 4px;
 .form-input {
   display: block;
   height: 30px;
-  width: 210px;
+  width: 100%;
   box-shadow: inset 1px 1.7px 5px rgba(0, 1, 1, 0.23);
   border: none;
 }
