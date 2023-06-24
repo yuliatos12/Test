@@ -4,6 +4,12 @@
   font-style: normal;
   font-weight: 400;
 }
+@font-face {
+  font-family: "Neutra Text";
+  src: url("../font/NeutraText-Book.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
 
 body {
   font-family: "High Tower", sans-serif;
@@ -96,8 +102,6 @@ header {
 .pad {
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 11px 11px 20px rgba(0, 0, 0, 0.45);
-  /* temporary */
-  margin-bottom: 500px;
 }
 .info {
   padding: 36px 36px 20px 36px;
@@ -111,9 +115,11 @@ header {
 }
 .info-container:nth-child(1) {
   margin-right: 95px;
-
 }
-
+.img {
+  /* vertical-align: bottom; */
+  display: block;
+}
 .info-desc {
   display: block;
   text-transform: uppercase;
@@ -130,7 +136,7 @@ header {
   font-weight: 400;
   line-height: 1.16;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-top: 22px;
+  margin-top: 17px;
 }
 .info-desc:is(:hover, :focus) {
   color: #deafb9;
@@ -164,9 +170,94 @@ header {
   box-sizing: border-box;
 }
 
-/* Footer */
 .footer {
   background-color: #2d2d2d;
   padding-top: 31px;
   padding-bottom: 79px;
 }
+.new-wine {
+  margin-top: 50px;
+}
+.background {
+  position: relative;
+  background-color: #303030;
+  padding: 16px 25px;
+}
+.new-wine > .pad {
+  
+padding: 20px;
+float: left;
+}
+.new-wine > .pad:not(:last-child) {
+  margin-right: 20px;
+}
+.new-wine-header {
+  text-align: center;
+font-size: 24px;
+font-weight: 400;
+font-family: 'High Tower Text';
+  color: #FFF;;
+}
+.new-wine-img {
+  display: block;
+  position: absolute;
+left: 0;
+margin-top: 15px;
+}
+.new-wine-desc {
+  font-family: 'Neutra Text';
+  color: aliceblue;
+  width: 380px;
+  margin-top: 236px;
+}
+.purchase {
+  margin-top: 13px;
+}
+.purchase-element:not(:last-child) {
+  float: left;
+  margin-right: 32px;
+  margin-top: 12px;
+}
+
+.price-element {
+  color: #FFF;
+font-size: 18px;
+line-height: 1.5;
+}
+.qty-label {
+  color: #FFF;
+font-size: 18px;
+font-family: 'Neutra Text';
+line-height: 1.5;
+margin-right: 9px;
+}
+.qty-input {
+  height: 30px;
+  width: 50px;
+  box-shadow: inset 1px 1.7px 5px rgba(0, 1, 1, 0.23);
+  font-family: 'Neutra Text';
+  font-size: 25px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border: none;
+}
+.submit {
+  border: transparent;
+  background-color: transparent;
+  color: #FFF;
+font-size: 18px;
+font-family: 'Neutra Text';
+line-height: 1.5;
+margin-top: 26px;
+cursor: pointer;
+transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.submit:is(:hover, :focus) {
+  border: #FFF 1px solid;
+  border-radius: 5px;
+}
+
+.new-wine {
+  margin-bottom: 50px;
+}
+/* Footer */
