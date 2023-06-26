@@ -184,20 +184,22 @@ header {
   padding: 16px 25px;
 }
 .new-wine > .pad {
-  
 padding: 20px;
 float: left;
 }
+
 .new-wine > .pad:not(:last-child) {
   margin-right: 20px;
 }
+
 .new-wine-header {
   text-align: center;
 font-size: 24px;
 font-weight: 400;
-font-family: 'High Tower Text';
+font-family: 'High Tower';
   color: #FFF;;
 }
+
 .new-wine-img {
   display: block;
   position: absolute;
