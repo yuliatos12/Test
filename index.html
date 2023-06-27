@@ -45,7 +45,7 @@
         <div class="slider-wrap">
           <img
             class="slider-img"
-            src="./assets/img/slider.png"
+            src="./assets/img/slider.jpg"
             alt="First slider image"
             width="1200"
           />
@@ -97,7 +97,12 @@
         <article class="pad wine-promo">
           <div class="background">
             <h3 class="new-wine-header">Order Your D2 2010 Release Today!</h3>
-            <img class="new-wine-img" src="./assets/img/d2.jpg" alt="" width="430"/>
+            <img
+              class="new-wine-img"
+              src="./assets/img/d2.jpg"
+              alt=""
+              width="430"
+            />
             <p class="new-wine-desc">
               This 2012 Gold Medal winner of the Sunset International Wine
               Compeition is a must have for your collection! Showing wonderful
@@ -108,17 +113,31 @@
               <div class="purchase-element">
                 <p class="price-element">Price</p>
                 <p class="price-element">Bottle / Case</p>
-                <p class="price-element">$40  /  $480</p>
+                <p class="price-element">$40 / $480</p>
               </div>
               <div class="purchase-element">
                 <form class="qty-form">
                   <label for="qty" class="qty-label">QTY</label>
-                  <input type="number"  name="qty" id="qty" min="1" max="100"class="qty-input"/>
-                  <div class="qty-submit"><input type="submit" value="BUY NOW" class="submit"/></div>
+                  <input
+                    class="qty-input"
+                    type="number"
+                    name="qty"
+                    id="qty"
+                    min="1"
+                    max="100"
+                    value="1"
+                  />
+                  <input type="submit" value="BUY NOW" class="submit" />
                 </form>
               </div>
               <div class="purchase-element">
-                <img src="./assets/img/crest-emblem.png" alt=""/>
+                <a href="#">
+                  <img
+                    class="crest-emblem"
+                    src="./assets/img/crest-emblem.png"
+                    alt=""
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -126,7 +145,12 @@
         <article class="pad wine-promo">
           <div class="background">
             <h3 class="new-wine-header">Meet The 2012 Chaleur Estate Blanc!</h3>
-            <img class="new-wine-img" src="./assets/img/chaleur-estate-white.jpg" alt="" width="430"/>
+            <img
+              class="new-wine-img"
+              src="./assets/img/chaleur-estate-white.jpg"
+              alt=""
+              width="430"
+            />
             <p class="new-wine-desc">
               A honeyed richness is expressed in the mouth unfolding to reveal
               sweet grass and herbs, sweet cream and once again, guava and
@@ -137,26 +161,123 @@
               <div class="purchase-element">
                 <p class="price-element">Price</p>
                 <p class="price-element">Bottle / Case</p>
-                <p class="price-element">$40  /  $480</p>
+                <p class="price-element">$40 / $480</p>
               </div>
               <div class="purchase-element">
                 <form class="qty-form">
-                  <label for="qty" class="qty-label">QTY</label>
-                  <input type="number"  name="qty" id="qty" min="1" max="100"class="qty-input"/>
-                  <div class="qty-submit"><input type="submit" value="BUY NOW" class="submit"/></div>
+                  <label for="qty1" class="qty-label">QTY</label>
+                  <input
+                    class="qty-input"
+                    type="number"
+                    name="qty"
+                    id="qty1"
+                    min="1"
+                    max="100"
+                    value="1"
+                  />
+                  <input type="submit" value="BUY NOW" class="submit" />
                 </form>
               </div>
               <div class="purchase-element">
-                <img class="crest-emblem" src="./assets/img/crest-emblem.png" alt="" />
+                <a href="#">
+                  <img
+                    class="crest-emblem"
+                    src="./assets/img/crest-emblem.png"
+                    alt=""
+                  />
+                </a>
               </div>
             </div>
           </div>
         </article>
       </section>
+
+      <section class="collection pad container">
+        <h2 class="collection-heading">DISCOVER THE COLLECTION</h2>
+        <a class="collection-item link" href="#"
+          ><img
+            class="collection-img"
+            src="./assets/img/delille.jpg"
+            alt="DeLille Cellars"
+        /></a>
+        <a class="collection-item link" href="#"
+          ><img
+            class="collection-img"
+            src="./assets/img/grand-ciel.jpg"
+            alt="Grand Ciel"
+        /></a>
+        <a class="collection-item link" href="#"
+          ><img
+            class="collection-img"
+            src="./assets/img/doyenne.jpg"
+            alt="Doyenne"
+        /></a>
+      </section>
     </main>
 
     <footer class="footer">
-      <div class="container"></div>
+      <div class="about container">
+        <div class="about-container">
+          <h4 class="about-us-heding">About Us</h4>
+          <ul class="about-list">
+            <li class="about-item">
+              <a href="#" class="about-list-link link">History</a>
+            </li>
+            <li class="about-item">
+              <a href="#" class="about-list-link link">Team</a>
+            </li>
+            <li class="about-item">
+              <a href="#" class="about-list-link link">Events</a>
+            </li>
+            <li class="about-item">
+              <a href="#" class="about-list-link link">More</a>
+            </li>
+          </ul>
+        </div>
+        <div class="about-container">
+          <h4 class="about-us-heding">Get in Touch</h4>
+          <address class="address">
+            <div class="mail-cont">
+              <img src="./assets/img/mail.png" alt="Mail" class="address-img" />
+              <a href="mailto:info@delillecellars.com" class="address-link link"
+                >info@delillecellars.com</a
+              >
+            </div>
+
+            <div class="phone-cont">
+              <img
+                src="./assets/img/phone.png"
+                alt="Phone"
+                class="address-img"
+              />
+              <a href="tel:+425-877-9472" class="address-link link"
+                >425-877-9472</a
+              >
+            </div>
+          </address>
+        </div>
+
+        <div class="about-container">
+          <h4 class="about-us-heding">Keep up with us Online</h4>
+          <ul>
+            <li class="social-link-item">
+              <a href="#" class="social-link link">
+                <img src="./assets/img/facebook.png" alt="Facebook" />
+              </a>
+            </li>
+            <li class="social-link-item">
+              <a href="#" class="social-link link">
+                <img src="./assets/img/twitter.png" alt="Twitter" />
+              </a>
+            </li>
+            <li class="social-link-item">
+              <a href="#" class="social-link link">
+                <img src="./assets/img/pinterest.png" alt="Pinterest" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
