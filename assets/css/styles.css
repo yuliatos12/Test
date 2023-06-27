@@ -96,6 +96,9 @@ header {
 .slider-img {
   display: block;
   margin: 0 auto;
+  
+}
+.slider {
   margin-bottom: 50px;
 }
 /* Info */
@@ -185,7 +188,7 @@ header {
   float: left;
 }
 
-.new-wine > .pad:nth-child(-2n + 5) {
+.new-wine > .pad:nth-child(2n+1) {
   margin-right: 20px;
 }
 
@@ -262,26 +265,18 @@ header {
 /* Collection */
 .collection-heading {
   color: #4b4b4b;
-  text-align: center;
-  font-size: 60px;
-  font-family: "High Tower";
-  line-height: 1.2;
-  font-weight: 400;
+  
+  font: 400 60px/72px "High Tower";
   padding-top: 16px;
-  margin-bottom: 21px;
-}
-.collection-img {
-  display: block;
+  padding-bottom: 21px;
 }
 .collection-item {
-  float: left;
-  padding-bottom: 37px;
-}
-.collection-item:not(:first-child) {
-  margin-left: 37px;
+ margin: 0 18px;
 }
 .collection {
   margin-bottom: 50px;
+ padding-bottom: 37px;
+  text-align: center;
 }
 
 /* Footer */
@@ -292,28 +287,17 @@ header {
 }
 .about-us-heding {
   color: #fff;
-  font-size: 18px;
-  font-family: "Neutra Text";
-  font-weight: 500;
-  line-height: 1;
-  margin-bottom: 14px;
-}
-.about-us-heding::after {
-  content: "";
-  display: block;
+  font: 500 18px/18px "Neutra Text";
   width: 205px;
-  height: 1px;
-  background-color: #fff;
-  top: 2px;
+  margin-bottom: 14px;
+  border-bottom: #fff 1px solid;
 }
+
+
 .about-list-link,
 .address-link {
   color: #fff;
-  font-size: 14px;
-  font-family: "Neutra Text";
-  font-weight: 500;
-  line-height: 1.28;
-  font-style: normal;
+  font: normal 500 14px/18px "Neutra Text";
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .about-list-link:is(:hover, :focus),
@@ -333,15 +317,45 @@ header {
 .phone-cont {
   margin-top: 6px;
 }
-.address-img {
+.default1 {
+  display: inline-block;
+  background-size: contain;
   vertical-align: middle;
+}
+.mail-icon {
+  width: 45px;
+  height: 34px; 
+  background: url(../img/mail.png) no-repeat;
+}
+.phone-icon {
+  width: 15px;
+  height: 43px; 
+  background: url(../img/phone.png) no-repeat;
+margin-left: 15px;
+margin-right: 35px;
 }
 .about-container:nth-child(2) {
   margin: 0 186px 0 152px;
 }
 .social-link-item {
   float: left;
+  
 }
+.default {
+  display: inline-block;
+  width: 45px;
+  height: 45px; 
+  background-size: contain;
+}
+.social-facebook {
+  background: url(../img/facebook.png) no-repeat;
+}
+.social-twitter {
+  background: url(../img/twitter.png) no-repeat;
+}
+ .social-pinterest {
+  background: url(../img/pinterest.png) no-repeat;
+ }
 .social-link-item:not(:last-child) {
   margin-right: 20px;
 }
