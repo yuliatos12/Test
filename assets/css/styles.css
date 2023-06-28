@@ -19,8 +19,8 @@ body {
   color: #303030;
   background-image: url("../img/emblem.png"), url("../img/emblem.png"),
     url("../img/background.png");
-  background-size: 500px, 500px, cover;
-  background-position: top 0 left -304px, bottom 0px right -304px, center;
+  background-size: 370px, 370px, cover;
+  background-position: top 0 left -225px, bottom 0px right -225px, center;
   background-repeat: no-repeat;
 }
 /* Utilities */
@@ -134,7 +134,11 @@ header {
   .list-item {
     padding-bottom: 4px;
   }
-  
+  body {
+    background-size: 500px, 500px, cover;
+    background-position: top 0 left -304px, bottom 0px right -304px, center;
+    background-repeat: no-repeat;
+  }
 }
 @media screen and (min-width: 960px) {
   .container {
