@@ -134,6 +134,7 @@ header {
 }
 
 .mobile-menu-list {
+  display: none;
   position: fixed;
   top: 0;
   right: -100%;
