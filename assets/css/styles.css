@@ -162,11 +162,9 @@ text-decoration: underline;
 }
 
 @media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
+  
   .logo-img {
-    width: 256px;
+    width: 356px;
     margin-bottom: 5px;
   }
   .authorization {
@@ -177,7 +175,7 @@ text-decoration: underline;
     padding-bottom: 3px;
   }
   .menu-btn {
-    top: 23px;
+    top: 33px;
   }
 }
 @media screen and  (max-width: 768px)
