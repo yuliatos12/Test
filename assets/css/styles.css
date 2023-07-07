@@ -339,7 +339,7 @@ text-decoration: underline;
   box-sizing: border-box;
 }
 
-.footer {
+.about {
   background-color: #2d2d2d;
   padding-top: 31px;
   padding-bottom: 64px;
@@ -622,17 +622,8 @@ header {
 .about-us-heding {
   width: max-content;
 }
-.about-container{
-  float: none;
-}
-.about-container:not(:last-child){
-  margin-bottom: 15px;
-}
 
-.about-container:nth-child(2) {
-  margin: 0;
-  float: right;
-}
+
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -659,6 +650,11 @@ header {
 .new-wine > .pad:nth-child(2n+1) {
   margin-right: 0;
 }
+.about-container:nth-child(2) {
+  margin: 0 62px 0 90px;
+  margin-bottom: 40px;
+}
+
 }
 @media screen and (max-width: 480px) {
   
@@ -726,189 +722,14 @@ margin-right: 0;
   width: 54px;
   float: none;
 }
+.mail-cont > .address-link {
+  margin-left: 8px;
 }
-
-
-
-
-
-
-/* Info */
-/* .pad {
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 11px 11px 20px rgba(0, 0, 0, 0.45);
+.about-container:nth-child(2) {
+    margin: 0 0 30px 30px;
 }
-.info {
-  padding: 36px 36px 20px 36px;
-  box-sizing: border-box;
-  margin-bottom: 50px;
-}
-
-.info-container {
-  float: left;
-}
-.info-container:last-child {
-  float: right;
-}
-.info-container:nth-child(1) {
-  margin-right: 75px;
-}
-.img {
-  display: block;
-}
-.info-desc {
-  display: block;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 1.16;
-  margin-top: 12px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.info-desc-mail {
-  text-align: center;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 1.16;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-top: 17px;
-}
-.img-link:hover > .info-desc {
-  color: #deafb9;
-} */
-
-/* Form */
-/* .form {
-  background-color: #e9e8e8;
-  padding: 2px 15px 20px 15px;
-  width: 210px;
-  margin: 0 18px;
-}
-.form-title {
-  font-size: 16px;
-  margin-bottom: 2px;
-  text-align: center;
-}
-.form-lable {
-  font-size: 16px;
-}
-.form-lable:not(:first-child) {
-  margin-top: 4px;
-}
-
-.form-input {
-  display: block;
-  height: 30px;
-  width: 100%;
-  box-shadow: inset 1px 1.7px 5px rgba(0, 1, 1, 0.23);
-  border: none;
-  padding: 7px 0 7px 10px;
-  box-sizing: border-box;
-} */
-
-/* Wine Promo */
-/* .background {
-  position: relative;
-  background-color: #303030;
-  width: 430px;
-  margin: 0 auto;
-}
-.new-wine > .pad {
-  width: 470px;
-  padding: 20px 0;
-  float: left;
-}
-
-.new-wine > .pad:nth-child(2n+1) {
-  margin-right: 20px;
-}
-
-.new-wine-header {
-  text-align: center;
-  font-size: 24px;
-  font-weight: 400;
-  font-family: "High Tower";
-  color: #fff;
-  padding: 15px 0 16px;
-}
-
-.new-wine-img {
-  display: block;
-  margin-bottom: 16px;
-}
-.new-wine-desc {
-  font-family: "Neutra Text";
-  color: aliceblue;
-  padding: 0 25px;
-  margin-bottom: 13px;
-}
-.purchase {
-  padding: 0 25px 22px;
-}
-.purchase-element:not(:last-child) {
-  float: left;
-  margin-right: 32px;
-  margin-top: 12px;
-}
-
-.price-element {
-  color: #fff;
-  font-size: 18px;
-  line-height: 1.5;
-}
-.qty-label {
-  color: #fff;
-  font-size: 18px;
-  font-family: "Neutra Text";
-  line-height: 1.5;
-  margin-right: 9px;
-}
-.qty-input {
-  height: 30px;
-  width: 50px;
-  box-shadow: inset 1px 1.7px 5px rgba(0, 1, 1, 0.23);
-  font-family: "Neutra Text";
-  font-size: 18px;
-  padding: 6px 0 8px 5px;
-  line-height: 1;
-  box-sizing: border-box;
-  border: none;
-}
-.submit {
-  display: block;
-  border: transparent;
-  background-color: transparent;
-  color: #fff;
-  font-size: 18px;
-  font-family: "Neutra Text";
-  line-height: 1.5;
-  margin-top: 26px;
-  cursor: pointer;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.submit:is(:hover, :focus) {
-  text-decoration: underline;
-  color: #fff;
-}
-.wine-promo {
-  margin-bottom: 50px;
-} */
-/* Collection */
-/* .collection-heading {
-  color: #4b4b4b;
+.phone-icon {
+  margin-left: 9px;
   
-  font: 400 60px/72px "High Tower";
-  padding-top: 16px;
-  padding-bottom: 21px;
 }
-.collection-item {
- margin: 0 18px;
 }
-.collection {
-  margin-bottom: 50px;
- padding-bottom: 37px;
-  text-align: center;
-} */
-
-/* Footer */
