@@ -14,7 +14,7 @@
 body {
   font-family: "High Tower", sans-serif;
   font-size: 10px;
-  text-transform: uppercase;
+  
   line-height: 1.5;
   color: #303030;
   background-image: url("../img/emblem.png"), url("../img/emblem.png"),
@@ -50,6 +50,7 @@ ul {
 .authorization .link,
 .menu-list .link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: uppercase;
 }
 .authorization .link:is(:hover, :focus),
 .menu-list .link:is(:hover, :focus) {
@@ -222,6 +223,92 @@ text-decoration: underline;
 .img-link:hover > .info-desc {
   color: #deafb9;
 }
+.background {
+  position: relative;
+  background-color: #303030;
+  width: 430px;
+  margin: 0 auto;
+}
+.new-wine > .pad {
+  width: 470px;
+  padding: 20px 0;
+  float: left;
+}
+
+.new-wine > .pad:nth-child(2n+1) {
+  margin-right: 20px;
+}
+
+.new-wine-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "High Tower";
+  color: #fff;
+  padding: 15px 0 16px;
+}
+
+.new-wine-img {
+  display: block;
+  margin-bottom: 16px;
+}
+.new-wine-desc {
+  font-family: "Neutra Text";
+  color: aliceblue;
+  padding: 0 25px;
+  margin-bottom: 13px;
+}
+.purchase {
+  padding: 0 25px 22px;
+}
+.purchase-element:not(:last-child) {
+  float: left;
+  margin-right: 32px;
+  margin-top: 12px;
+}
+
+.price-element {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.qty-label {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Neutra Text";
+  line-height: 1.5;
+  margin-right: 9px;
+}
+.qty-input {
+  height: 30px;
+  width: 50px;
+  box-shadow: inset 1px 1.7px 5px rgba(0, 1, 1, 0.23);
+  font-family: "Neutra Text";
+  font-size: 18px;
+  padding: 6px 0 8px 5px;
+  line-height: 1;
+  box-sizing: border-box;
+  border: none;
+}
+.submit {
+  display: block;
+  border: transparent;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Neutra Text";
+  line-height: 1.5;
+  margin-top: 26px;
+  cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.submit:is(:hover, :focus) {
+  text-decoration: underline;
+  color: #fff;
+}
+.wine-promo {
+  margin-bottom: 50px;
+}
 
 /* Form */
 .form {
@@ -252,6 +339,85 @@ text-decoration: underline;
   box-sizing: border-box;
 }
 
+.footer {
+  background-color: #2d2d2d;
+  padding-top: 31px;
+  padding-bottom: 64px;
+}
+.about-us-heding {
+  color: #fff;
+  font: 500 18px/18px "Neutra Text";
+  width: 205px;
+  margin-bottom: 14px;
+  border-bottom: #fff 1px solid;
+}
+
+
+.about-list-link,
+.address-link {
+  color: #fff;
+  font: normal 500 14px/18px "Neutra Text";
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.about-list-link:is(:hover, :focus),
+.address-link:is(:hover, :focus) {
+  color: #855861;
+}
+.about-container {
+  float: left;
+}
+.mail-cont > .address-link {
+  margin-left: 19px;
+}
+.phone-cont > .address-img {
+  padding-left: 15px;
+  margin-right: 35px;
+}
+.phone-cont {
+  margin-top: 6px;
+}
+.default1 {
+  display: inline-block;
+  background-size: contain;
+  vertical-align: middle;
+}
+.mail-icon {
+  width: 45px;
+  height: 34px; 
+  background: url(../img/mail.png) no-repeat;
+}
+.phone-icon {
+  width: 15px;
+  height: 43px; 
+  background: url(../img/phone.png) no-repeat;
+margin-left: 15px;
+margin-right: 35px;
+}
+.about-container:nth-child(2) {
+  margin: 0 186px 0 152px;
+}
+.social-link-item {
+  float: left;
+  
+}
+.default {
+  display: inline-block;
+  width: 45px;
+  height: 45px; 
+  background-size: contain;
+}
+.social-facebook {
+  background: url(../img/facebook.png) no-repeat;
+}
+.social-twitter {
+  background: url(../img/twitter.png) no-repeat;
+}
+ .social-pinterest {
+  background: url(../img/pinterest.png) no-repeat;
+ }
+.social-link-item:not(:last-child) {
+  margin-right: 20px;
+}
 
 @media screen and (min-width: 1201px) {
 .slider {
@@ -372,6 +538,35 @@ text-decoration: underline;
   .info-desc-mail {
     margin-top: 10px;
   }
+  .new-wine > .pad {
+    width: 374px;
+  }
+  .background,
+  .new-wine-img {
+    width: 340px;
+  }
+
+  .new-wine-header {
+    font-size: 18px;
+  }
+ .new-wine-desc {
+  font-size: 13px;
+ }
+  .price-element, .qty-label, .submit {
+    font-size: 14px;
+  }
+  .submit {
+    margin-top: 14px;
+  }
+  .purchase-element:not(:last-child) {
+    margin-right: 12px;
+  }
+  .crest-emblem {
+    width: 98px;
+  }
+  .about-container:nth-child(2) {
+    margin: 0 72px 0 80px;
+}
 }
 @media screen and  (max-width: 768px)
 {
@@ -389,10 +584,58 @@ header {
   float: left;
 
 }
-
+.info-container {
+  display: inline-block;
+  float: none;
+}
+.info-container:last-child {
+ float: none;
+}
+.info-container:not(:last-child) {
+  margin-bottom: 15px;
+}
+.info-container:nth-child(1) {
+  margin-right: 40px;
+}
+.info {
+  text-align: center;
+}
+.form-title, .form-lable {
+  text-transform: none;
+}
+.form {
+  margin: 0;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px){
+
+.new-wine > .pad {
+  float: none;
+  display: inline-block;
+}
+.new-wine {
+  text-align: center;
+}
+.new-wine-desc {
+  text-align: left;
+  font-size: 14px;
+}
+.about-us-heding {
+  width: max-content;
+}
+.about-container{
+  float: none;
+}
+.about-container:not(:last-child){
+  margin-bottom: 15px;
+}
+
+.about-container:nth-child(2) {
+  margin: 0;
+  float: right;
+}
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
   
   .logo-img {
     width: 356px;
@@ -410,10 +653,17 @@ header {
   .collection-item:not(:last-child) {
     margin-bottom: 15px;
 }
+.new-wine-header {
+  font-size: 20px;
+}
+.new-wine > .pad:nth-child(2n+1) {
+  margin-right: 0;
+}
 }
 @media screen and (max-width: 480px) {
+  
 .logo-img {
-  width: 256px;
+  width: 237px;
 }
 .body {
   font-size: 14px;
@@ -431,7 +681,54 @@ header {
 .collection-item:not(:last-child) {
   margin-bottom: 15px;
 }
+
+.info-container:nth-child(1) {
+margin-right: 0;
 }
+.info {
+  text-align: center;
+  padding: 36px 27px 20px 27px;
+}
+.info-desc,
+.info-desc-mail {
+  font-size: 25px;
+}
+.new-wine > .pad {
+  width: 300px;
+  padding: 14px 0;
+}
+
+.background,
+.new-wine-img {
+  width: 280px;
+}
+.new-wine-desc {
+  display: none;
+}
+.new-wine-header {
+  font-size: 15px;
+}
+.new-wine > .pad:nth-child(2n+1) {
+  margin-right: 0;
+}
+.price-element, .qty-label, .submit {
+  font-size: 12px;
+  text-align: left;
+}
+.submit {
+  margin-top: 14px;
+}
+.purchase-element:not(:last-child) {
+  margin-right: 12px;
+}
+.crest-emblem {
+  margin-top: 3px;
+  width: 54px;
+  float: none;
+}
+}
+
+
 
 
 
@@ -511,7 +808,7 @@ header {
 } */
 
 /* Wine Promo */
-.background {
+/* .background {
   position: relative;
   background-color: #303030;
   width: 430px;
@@ -596,7 +893,7 @@ header {
 }
 .wine-promo {
   margin-bottom: 50px;
-}
+} */
 /* Collection */
 /* .collection-heading {
   color: #4b4b4b;
@@ -615,82 +912,3 @@ header {
 } */
 
 /* Footer */
-.footer {
-  background-color: #2d2d2d;
-  padding-top: 31px;
-  padding-bottom: 64px;
-}
-.about-us-heding {
-  color: #fff;
-  font: 500 18px/18px "Neutra Text";
-  width: 205px;
-  margin-bottom: 14px;
-  border-bottom: #fff 1px solid;
-}
-
-
-.about-list-link,
-.address-link {
-  color: #fff;
-  font: normal 500 14px/18px "Neutra Text";
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.about-list-link:is(:hover, :focus),
-.address-link:is(:hover, :focus) {
-  color: #855861;
-}
-.about-container {
-  float: left;
-}
-.mail-cont > .address-link {
-  margin-left: 19px;
-}
-.phone-cont > .address-img {
-  padding-left: 15px;
-  margin-right: 35px;
-}
-.phone-cont {
-  margin-top: 6px;
-}
-.default1 {
-  display: inline-block;
-  background-size: contain;
-  vertical-align: middle;
-}
-.mail-icon {
-  width: 45px;
-  height: 34px; 
-  background: url(../img/mail.png) no-repeat;
-}
-.phone-icon {
-  width: 15px;
-  height: 43px; 
-  background: url(../img/phone.png) no-repeat;
-margin-left: 15px;
-margin-right: 35px;
-}
-.about-container:nth-child(2) {
-  margin: 0 186px 0 152px;
-}
-.social-link-item {
-  float: left;
-  
-}
-.default {
-  display: inline-block;
-  width: 45px;
-  height: 45px; 
-  background-size: contain;
-}
-.social-facebook {
-  background: url(../img/facebook.png) no-repeat;
-}
-.social-twitter {
-  background: url(../img/twitter.png) no-repeat;
-}
- .social-pinterest {
-  background: url(../img/pinterest.png) no-repeat;
- }
-.social-link-item:not(:last-child) {
-  margin-right: 20px;
-}
