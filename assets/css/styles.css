@@ -315,6 +315,8 @@ header {
   background-color: #2d2d2d;
   padding-top: 31px;
   padding-bottom: 64px;
+  float: left;
+  width: 100%;
 }
 .about-us-heding {
   color: #fff;
@@ -323,48 +325,35 @@ header {
   margin-bottom: 14px;
   border-bottom: #fff 1px solid;
 }
+
+.about-container {
+  float: left;
+}
+.art{
+  clear: left;
+  float: left;
+  padding-left: 51px;
+  color: #fff;
+  font: normal 500 14px/43px "Neutra Text";
+  background-repeat: no-repeat;
+}
+.art:hover{
+  text-decoration: underline;
+}
+.mail-art{
+  background-image: url(../img/mail.png) ;
+}
+.address-art{
+  background-image: url(../img/phone.png);
+}
 .about-list-link,
 .address-link {
   color: #fff;
   font: normal 500 14px/18px "Neutra Text";
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.about-list-link:is(:hover, :focus),
-.address-link:is(:hover, :focus) {
-  color: #855861;
-}
-.about-container {
-  float: left;
-}
-.mail-cont > .address-link {
-  margin-left: 19px;
-}
-.phone-cont > .address-img {
-  padding-left: 15px;
-  margin-right: 35px;
-}
-.phone-cont {
-  margin-top: 6px;
-}
-.default1 {
-  display: inline-block;
-  background-size: contain;
-  vertical-align: middle;
-}
-.mail-icon {
-  width: 45px;
-  height: 34px;
-  background: url(../img/mail.png) no-repeat;
-}
-.phone-icon {
-  width: 15px;
-  height: 43px;
-  background: url(../img/phone.png) no-repeat;
-  margin-left: 15px;
-  margin-right: 35px;
-}
-.about-container:nth-child(2) {
-  margin: 0 186px 0 152px;
+.about-container:nth-child(3) {
+  float: right;
 }
 .social-link-item {
   float: left;
@@ -386,6 +375,9 @@ header {
 }
 .social-link-item:not(:last-child) {
   margin-right: 20px;
+}
+.about-container:nth-child(2) {
+  margin-left: calc(50% - 270px);
 }
 @media screen and (min-width: 1201px) {
   .slider {
@@ -525,9 +517,8 @@ header {
   .crest-emblem {
     width: 98px;
   }
-  .about-container:nth-child(2) {
-    margin: 0 72px 0 80px;
-  }
+
+
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -553,7 +544,7 @@ header {
     margin-bottom: 15px;
   }
   .info-container:nth-child(1) {
-    margin-right: 40px;
+    margin-right: 24px;
   }
   .info {
     text-align: center;
@@ -606,8 +597,7 @@ header {
     margin-right: 0;
   }
   .about-container:nth-child(2) {
-    margin: 0 62px 0 90px;
-    margin-bottom: 40px;
+    margin-left: calc(50% - 170px);
   }
 }
 @media screen and (max-width: 480px) {
@@ -641,46 +631,45 @@ header {
   .info-desc-mail {
     font-size: 25px;
   }
+  .background {
+    width: 93%;
+    display: table;
+  }
+  .new-wine-img {
+    width: 100%;
+  }
   .new-wine > .pad {
-    width: 300px;
+    width: 100%;
     padding: 14px 0;
   }
-  .background,
-  .new-wine-img {
-    width: 280px;
-  }
-  .new-wine-desc {
-    display: none;
-  }
-  .new-wine-header {
-    font-size: 15px;
-  }
+.crest-emblem {
+  width: 73px;
+}
+.purchase-element:not(:last-child) {
+  margin-right: 16px;
+}
+.qty-label,
+.submit,
+.price-element {
+  font-size: 14px;
+}
+.submit {
+  margin-top: 14px;
+}
   .new-wine > .pad:nth-child(2n + 1) {
     margin-right: 0;
-  }
-  .price-element,
-  .qty-label,
-  .submit {
-    font-size: 12px;
-    text-align: left;
-  }
-  .submit {
-    margin-top: 14px;
-  }
-  .purchase-element:not(:last-child) {
-    margin-right: 12px;
-  }
-  .crest-emblem {
-    margin-top: 3px;
-    width: 54px;
-    float: none;
   }
   .mail-cont > .address-link {
     margin-left: 8px;
   }
   .about-container:nth-child(2) {
-    margin: 0 0 30px 30px;
+   margin-left: calc(50% - 117px);
+   margin-bottom: 40px;
   }
+  .about-container:nth-child(3) {
+    float: left;
+}
+
   .phone-icon {
     margin-left: 9px;
   }
