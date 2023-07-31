@@ -386,6 +386,52 @@ header {
     display: table;
     margin-bottom: 50px;
   }
+
+  .arrow {
+     width: 48px;
+   height: 48px;
+   border-color: rgba(255, 255, 255, 0.8);
+   position: absolute;
+   top: 50%;
+   margin-top: 30px;
+   cursor: pointer;
+  }
+.prev {
+border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+   border-left: 1px solid rgba(255, 255, 255, 0.8);
+   transform: rotate(45deg);
+   left: 180px;
+}
+   
+.next {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+   border-left: 1px solid rgba(255, 255, 255, 0.8);
+   transform: rotate(-135deg);
+   right: 190px;
+}
+   
+
+  .viewport {
+    width: 100%;
+    display: table;
+    position: relative;
+    overflow: hidden;
+}
+  .slider-wrap {
+    position: relative;
+    width: calc(100% * 4);
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    transition: 1500ms;
+  
+  }
+  .slider-wrap li {
+    list-style: none;
+    display: inline;
+    float: left;
+}
 }
 @media screen and (max-width: 1200px) {
   .slider {
@@ -397,6 +443,29 @@ header {
   .slider-img {
     width: 100%;
   }
+
+  .viewport {
+    width: 100%;
+    display: table;
+    position: relative;
+    overflow: hidden;
+}
+  .slider-wrap {
+    position: relative;
+    width: calc(100% * 4);
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    transition: 1500ms;
+  
+  }
+  .slider-wrap li {
+    width: calc(100%/4);
+    list-style: none;
+    display: inline;
+    float: left;
+}
 }
 @media screen and (min-width: 960px) {
   .container {
@@ -422,19 +491,86 @@ header {
     background-repeat: no-repeat;
   }
   .header {
-    position: relative;
+    /* position: relative; */
   }
   header {
-    position: absolute;
+    /* position: absolute; */
   }
+  
+  .arrow {
+    width: 48px;
+  height: 48px;
+  border-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 50%;
+
+  cursor: pointer;
+ }
+.prev {
+border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  transform: rotate(45deg);
+  left: 40px;
+}
+  
+.next {
+ border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  transform: rotate(-135deg);
+  right: 40px;
+}
+  .viewport {
+    width: 100%;
+    display: table;
+    position: relative;
+    overflow: hidden;
+}
+  .slider-wrap {
+    position: relative;
+    width: calc(100% * 4);
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    transition: 1500ms;
+  
+  }
+  .slider-wrap li {
+    width: calc(100%/4);
+    list-style: none;
+    display: inline;
+    float: left;
+}
 }
 @media screen and (min-width: 769px) {
   .hamburger-menu {
     display: none;
   }
   header {
-    position: absolute;
+    /* position: absolute; */
   }
+  .arrow {
+    width: 48px;
+  height: 48px;
+  border-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 50%;
+  margin-top: 0;
+  cursor: pointer;
+ }
+.prev {
+border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  transform: rotate(45deg);
+  left: 180px;
+}
+  
+.next {
+ border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  transform: rotate(-135deg);
+  right: 180px;
+}
 }
 @media screen and (min-width: 769px) and (max-width: 960px) {
   body {
@@ -518,7 +654,28 @@ header {
     width: 98px;
   }
 
-
+  .arrow {
+    width: 48px;
+  height: 48px;
+  border-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 50%;
+  margin-top: 0;
+  cursor: pointer;
+ }
+.prev {
+border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  transform: rotate(45deg);
+  left: 40px;
+}
+  
+.next {
+ border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  transform: rotate(-135deg);
+  right: 40px;
+}
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -574,6 +731,28 @@ header {
   .about-us-heding {
     width: max-content;
   }
+  .arrow {
+    width: 48px;
+  height: 48px;
+  border-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 50%;
+  margin-top: -23px;
+  cursor: pointer;
+ }
+.prev {
+border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  transform: rotate(45deg);
+  left: 40px;
+}
+  
+.next {
+ border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  transform: rotate(-135deg);
+  right: 40px;
+}
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .logo-img {
@@ -673,4 +852,10 @@ header {
   .phone-icon {
     margin-left: 9px;
   }
+  
+  .arrow {
+  
+  margin-top: -74px;
+  
+ }
 }
