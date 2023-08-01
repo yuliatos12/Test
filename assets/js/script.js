@@ -6,55 +6,47 @@ $(document).ready(function() {
 
     $('.next-btn').click(function() {
         nextSlide();
-    });
-
-    $('.prev-btn').click(function() {
+      });
+    
+      $('.prev-btn').click(function() {
         prevSlide();
-    });
-
-function nextSlide() {
-    if (slideNow === slideCount || slideNow <= 0 || slideNow > slideCount) {
-        $('.slider-wrap').css('transform', 'translate(0, 0)');
-        slideNow = 1;
-    } else {
-        translateWidth = -$('.viewport').width() * (slideNow);
-        $('.slider-wrap').css({
+      });
+    
+      function nextSlide() {
+        if (slideNow < slideCount) {
+          translateWidth = -$('.viewport').width() * slideNow;
+          $('.slider-wrap').css({
             'transform': 'translate(' + translateWidth + 'px, 0)'
-        });
-        slideNow++;
-    }
-}
-function prevSlide() {
-    if (slideNow === 1 || slideNow <= 0 || slideNow > slideCount) {
-        translateWidth = -$('.viewport').width() * (slideCount - 1);
-        $('.slider-wrap').css({
+          });
+          slideNow++;
+        } 
+      }
+    
+      function prevSlide() {
+        if (slideNow > 1) {
+          slideNow--;
+          translateWidth = -$('.viewport').width() * (slideNow - 1);
+          $('.slider-wrap').css({
             'transform': 'translate(' + translateWidth + 'px, 0)'
-        });
-        slideNow = slideCount;
-    } else {
-        translateWidth = -$('.viewport').width() * (slideNow - 2);
-        $('.slider-wrap').css({
-            'transform': 'translate(' + translateWidth + 'px, 0)'
-            
-        });
-        slideNow--;
-    }
-}
+          });
+        
+        }
+      }
 
-
-    const refs = {
-      openMenuBtn: document.querySelector('[data-menu-open]'),
-      closeMenuBtn: document.querySelector('[data-menu-close]'),
-      menu: document.querySelector('[data-menu]'),
-    };
+    const $menu = $('[data-menu]');
+  const $openMenuBtn = $('[data-menu-open]');
+  const $closeMenuBtn = $('[data-menu-close]');
+  const $arrowNext = $('.next')
   
-    refs.openMenuBtn.addEventListener('click', toggleMenu);
-    refs.closeMenuBtn.addEventListener('click', toggleMenu);
+  $openMenuBtn.on('click', toggleMenu);
+  $closeMenuBtn.on('click', toggleMenu);
   
-    function toggleMenu() {
-      refs.menu.classList.toggle('is-hidden');
-      document.body.classList.toggle('no-scroll');
+  function toggleMenu() {
+    $menu.toggleClass('is-hidden');
+    if( !$menu.hasClass('is-hidden')) {
+        $arrowNext.css({'z-index': '-1'})
     }
+  }
   
 });
 
