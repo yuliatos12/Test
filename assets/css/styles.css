@@ -390,9 +390,9 @@ font-size: 16px;
 .menu-btn {
   display: none;
 }
-.marquee-panels {
+/* .marquee-panels {
   display: none;
-}
+} */
 .marquee-container {
   position: relative;
   overflow: hidden;
@@ -406,17 +406,20 @@ font-size: 16px;
   top: 95%;
   left: 50%;
 }
-.dot:hover {
+.marquee-nav-item:hover {
+  opacity: 1;
+} 
+.selected {
   opacity: 1;
 }
-.dot {
+
+.marquee-nav-item {
   height: 15px;
   width: 15px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   cursor: pointer;
- 
 }
 }
 @media screen and (max-width: 1200px) {
