@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $("img.marquee_panel_photo").each(function (index) {
-    const photoWidth = $("marquee_container").width();
+    const photoWidth = $(".marquee_container").width();
     const photoPosition = index * photoWidth;
 
     $(".marquee_photos").append(
